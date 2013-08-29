@@ -27,7 +27,7 @@ if (file_exists($cached_output) && (filemtime($cached_output) > (time() - $cache
     $whmhash =     "<-- ENTER WHM Hash here -->";
  
 ## THE QUERY TO THE API
-$query = "https://$server_name:2087/json-api/showbw?search=$user&searchtype=user";
+$query = "$server_name:2087/json-api/showbw?search=$user&searchtype=user";
  
 ## CRAZY CURL STUFF TO AUTH AND RETURN DATA
 $curl = curl_init();
@@ -58,7 +58,7 @@ $bw_limit = round(MBFormat($obj->bandwidth[0]->acct[0]->limit)); // LIMIT
 $bw_used = round(MBFormat($obj->bandwidth[0]->totalused)); // USED
   
 ## THE QUERY TO THE API
-$query = "https://$server_name:2087/json-api/accountsummary?user=$user";
+$query = "$server_name:2087/json-api/accountsummary?user=$user";
  
 ## CRAZY CURL STUFF TO AUTH AND RETURN DATA
 $curl = curl_init();
