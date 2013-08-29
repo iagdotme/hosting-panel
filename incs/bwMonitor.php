@@ -5,6 +5,8 @@
  NOTE: Put this in a directory called "incs" in your user folder.
        For example /home/user/incs/bwMonitor.php
        Create a directory in incs called "cache" and give it write permissions.
+ Thanks to Paul Or, for much of the code:
+ http://www.paulor.net/tag/cpanel-2/
 */
 $current_dir = dirname(__FILE__);
 

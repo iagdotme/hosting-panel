@@ -6,6 +6,13 @@ Author: Ian Anderson Gray
 Version: 0.2
 Author URI: http://iag.me/
 */
+
+/*
+Thanks to Paul Or, for much of the code:
+ http://www.paulor.net/tag/cpanel-2/
+*/
+
+
 function SP_wp_dashboard()
    {
       $server_name =    "<-- Enter Server Name Here -->";
